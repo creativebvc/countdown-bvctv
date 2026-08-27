@@ -238,7 +238,7 @@
         }
 
         .cell-label {
-            font-size: 20px; font-weight: 500; line-height: 28px;
+            font-size: 20px; font-weight: 600; line-height: 28px;
             text-transform: uppercase; letter-spacing: 4px;
             opacity: 0.55;
         }
@@ -277,7 +277,9 @@
             width: 140px;
             height: 140px;
             display: block;
-            flex: 0 0 140px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 140px;
             margin-left: 40px;
         }
 
@@ -359,7 +361,10 @@
                 <div class="cta-label">Register at</div>
                 <div class="cta-url">choose.bowvalleycollege.ca/open-house</div>
             </div>
-            <img class="cta-qr" src="assets/QRCODE.svg" alt="QR code for Open House registration">
+            <img class="cta-qr"
+                 src="assets/QRCODE.svg"
+                 alt="QR code for Open House registration"
+                 onerror="this.style.visibility='hidden';">
         </div>
 
     </div>
