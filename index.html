@@ -24,50 +24,11 @@
             position: relative;
             font-family: 'Poppins', sans-serif;
             color: var(--text-primary);
-            background: linear-gradient(45deg, #2e2baf 0%, #102a58 100%);
+            background: linear-gradient(45deg, #102a58 0%, #2e2baf 100%);
             background-size: 100% 100%;
             display: flex; justify-content: center; align-items: center;
             overflow: hidden;
             user-select: none; -webkit-user-select: none;
-        }
-
-        /* ========================================
-           AMBIENT DEPTH
-           Two soft light pools drifting on transform
-           only. Ties the warm headline into the
-           cool ground without a flat overlay.
-           ======================================== */
-        .glow {
-            position: absolute;
-            border-radius: 50%;
-            pointer-events: none;
-            will-change: transform;
-        }
-
-        .glow-cool {
-            top: -420px; left: -320px;
-            width: 1500px; height: 1500px;
-            background: radial-gradient(circle, rgba(120, 112, 255, 0.28) 0%, rgba(120, 112, 255, 0) 62%);
-            animation: driftA 54s ease-in-out infinite;
-        }
-
-        .glow-warm {
-            bottom: -520px; right: -380px;
-            width: 1400px; height: 1400px;
-            background: radial-gradient(circle, rgba(255, 76, 117, 0.16) 0%, rgba(255, 76, 117, 0) 64%);
-            animation: driftB 66s ease-in-out infinite;
-        }
-
-        @keyframes driftA {
-            0%   { transform: translate(0, 0); }
-            50%  { transform: translate(90px, 60px); }
-            100% { transform: translate(0, 0); }
-        }
-
-        @keyframes driftB {
-            0%   { transform: translate(0, 0); }
-            50%  { transform: translate(-70px, -50px); }
-            100% { transform: translate(0, 0); }
         }
 
         /* ========================================
@@ -305,9 +266,6 @@
     </style>
 </head>
 <body>
-
-    <div class="glow glow-cool"></div>
-    <div class="glow glow-warm"></div>
 
     <div class="stage" id="stage">
 
